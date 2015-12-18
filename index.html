@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Bigcommerce Challenge</title>
+    <!-- Roboto Font -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,500' rel='stylesheet' type='text/css'>
+    <!-- css -->
+    <link rel="stylesheet" href="styles/main.css">
+  </head>
+
+  <body>
+
+    <div class="app-container">
+
+      <!-- NAVIGATION -->
+      <nav class="app-navigation">
+        <header class="navigation-header">
+          <img id="menu-toggle" src="assets/ic_menu_24px.svg">
+          <h1>My books</h1>
+        </header>
+        <div id="small-nav" class="small-nav-container">
+          <ul>
+            <li><a>El Pooch</a></li>
+            <li><a>The Flight</a></li>
+            <li><a>Top 10 Australian Beaches</a></li>
+          </ul>
+        </div>
+        <div class="main-nav-container navigation-list">
+          <ul>
+            <li><a>El Pooch</a></li>
+            <li><a>The Flight</a></li>
+            <li><a>Top 10 Australian Beaches</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- APP MAIN CONTENT -->
+      <main class="app-main">
+
+        <!-- COLUMN 1 -->
+        <div class="main-column-1" id="book-column">
+
+          <!-- WELCOME BACK -->
+          <section id="welcome-back" class="main-section welcome-back-section">
+            <h1>Welcome back!</h1>
+            <p class="welcome-back-blurb">
+              It's been a while.
+              <br>
+              Read any books lately?
+            </p>
+            <article class="section-nav">
+              <div class="navigation-list">
+                <ul>
+                  <li>
+                    <a id="welcome-back-no">NO</a>
+                  </li>
+                  <li>
+                    <a id="welcome-back-yes">YES</a>
+                  </li>
+                </ul>
+              </div>
+            </article>
+          </section>
+
+          <section id="enter-book" class="main-section enter-book-section">
+            <h1>Enter book details</h1>
+            <form class="enter-book-form">
+              <label>
+                Title:
+                <input id="book-title-input" type="text">
+              </label>
+              <br>
+              <label>
+                Author:
+              <input id="book-author-input" type="text">
+              </label>
+            </form>
+            <article class="section-nav">
+              <div class="navigation-list">
+                <ul>
+                  <li>
+                    <a id="enter-book-submit">SUBMIT</a>
+                  </li>
+                </ul>
+              </div>
+            </article>
+          </section>
+
+          <!-- EXAMPLE MARKUP OF A BOOK COMPONENT -->
+          <!-- <section class="main-section book-section">
+            <img class="book-section-image" src="assets/elPooch.png">
+            <div class="book-section-content">
+              <h1>El Pooch</h1>
+              <h2 class="subhead">By Alex Nelson</h2>
+              <article class="section-nav book-section-nav">
+                <div class="navigation-list">
+                  <ul>
+                    <li><a>FREE SAMPLE</a></li>
+                    <li><a>REVIEW</a></li>
+                  </ul>
+                </div>
+              </article>
+            </div>
+            <div class="clear-float"></div>
+          </section> -->
+
+        </div>
+
+
+        <!-- COLUMN 2 -->
+        <div class="main-column-2">
+
+          <!-- EXPLORE -->
+          <section class="main-section explore-section">
+            <img src="assets/australianBeaches.png">
+            <h2 class="subhead">Number 10</h2>
+            <p class="explore-blurb">
+              Whitehaven Beach
+              <br>
+              Whitsunday Island, Whitsunday Islands
+            </p>
+            <article class="section-nav">
+              <div class="navigation-list">
+                <ul>
+                  <li><a>SHARE</a></li>
+                  <li><a>EXPLORE</a></li>
+                </ul>
+              </div>
+            </article>
+          </section>
+
+        </div>
+
+        <div class="clear-float"></div>
+
+      </main>
+
+    </div>
+
+    <!-- our store for the app data -->
+    <script src="store/appData.js"></script>
+    <!-- component scripts -->
+    <script src="js/components.js"></script>
+    <!-- main app scripts -->
+    <script src="js/app.js"></script>
+
+  </body>
+
+</html>

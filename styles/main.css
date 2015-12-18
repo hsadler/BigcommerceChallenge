@@ -1,0 +1,287 @@
+/*MAIN CSS*/
+
+/*for testing*/
+* {
+  /*border: 1px dotted green;*/
+}
+
+
+/*general app styles*/
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto;
+}
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+img {
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  margin: 30px 40px;
+  font-size: 40px;
+  font-weight: 400;
+}
+h2.subhead {
+  font-size: 28px;
+  font-weight: 300;
+  margin: 0px 0 35px 40px;
+  color: #666666;
+}
+p {
+  margin: 30px 40px;
+}
+
+
+/*nav styles*/
+header.navigation-header {
+  padding: 2px;
+  background-color: #F90067;
+  color: #FFFFFF;
+}
+header.navigation-header img {
+  display: none;
+  margin: 28px 0 22px 40px;
+  width: 50px;
+  float: left;
+}
+header.navigation-header h1 {
+  display: inline-block;
+}
+#menu-toggle {
+  cursor: pointer;
+}
+/*small nav*/
+div.small-nav-container {
+  display: none;
+  position: absolute;
+  top: 110px;
+  width: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+div.small-nav-container ul {
+  background-color: #FFFFFF;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+}
+div.small-nav-container li {
+  border-top: 1px solid #DDDDDD;
+}
+div.small-nav-container li:last-child {
+  border-top: none;
+}
+div.small-nav-container li a:hover {
+  color: #686868;
+  cursor: pointer;
+}
+div.small-nav-container li a {
+  display: block;
+  color: #000000;
+  font-size: 25px;
+  font-weight: 600;
+  padding: 40px 16px;
+  text-decoration: none;
+}
+/*main nav*/
+div.main-nav-container {
+  background-color: #FFFFFF;
+}
+div.navigation-list {
+  padding: 25px;
+}
+div.navigation-list ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+div.navigation-list li {
+  display: inline-block;
+  margin-right: 20px;
+}
+div.navigation-list li a {
+  display: block;
+  color: #000000;
+  font-size: 25px;
+  font-weight: 600;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+div.navigation-list li a:hover {
+  color: #686868;
+  cursor: pointer;
+}
+
+
+/*main styles*/
+main.app-main {
+  padding: 0 .5%;
+  min-height: 1500px;
+  background-color: #DDDDDD;
+}
+div.main-column-1, div.main-column-2 {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 50%;
+  float: left;
+}
+
+/*main section styles*/
+section.main-section {
+  box-sizing: border-box;
+  display: block;
+  width: 98%;
+  margin: 2% 1% 0 1%;
+  background-color: #F8F8F8;
+  border-radius: 4px;
+  -moz-box-shadow: 2px 2px 3px 2px #AAAAAA;
+  -webkit-box-shadow: 2px 2px 3px 2px #AAAAAA;
+  box-shadow: 2px 2px 3px 2px #AAAAAA;
+}
+section h1 {
+  color: #F90067;
+}
+section p {
+  font-size: 30px;
+  line-height: 45px;
+}
+article.section-nav {
+  border-top: 1px solid #DDDDDD;
+}
+article.section-nav ul li:last-child a {
+  color: #FFA500;
+}
+article.section-nav ul li:last-child a:hover {
+  color: #FCCB6F;
+  cursor: pointer;
+}
+
+
+/*welcome back section styles*/
+section.welcome-back-section {
+  padding: 20px 0 0 0;
+}
+p.welcome-back-blurb {
+  margin-bottom: 100px;
+}
+
+
+/*enter book section styles*/
+section.enter-book-section {
+  display: none;
+  padding: 20px 0 0 0;
+}
+form.enter-book-form {
+  margin: 0 0 20px 40px;
+}
+form.enter-book-form label {
+  font-size: 30px;
+}
+form.enter-book-form input {
+  height: 30px;
+  width: 200px;
+  line-height: 32px;
+  font-size: 20px;
+  margin: 10px;
+}
+
+
+/*book section styles*/
+section.book-section {
+  overflow: hidden;
+}
+section.book-section img.book-section-image {
+  width: 170px;
+  float: left;
+}
+section.book-section h1 {
+  color: #000000;
+  margin-bottom: 10px;
+}
+section.book-section p.book-rating {
+  font-size: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+div.book-section-content {
+  overflow: hidden;
+}
+
+
+/*explore section styles*/
+section.explore-section p.explore-blurb {
+  font-size: 27px;
+  line-height: 40px;
+}
+section.explore-section img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+
+/*screen breakpoints*/
+@media only screen and (max-width: 800px) {
+  div.main-column-1, div.main-column-2 {
+    width: 100%;
+  }
+  header.navigation-header img {
+    display: inline-block;
+  }
+  div.main-nav-container {
+    display: none;
+  }
+}
+
+/*utility styles*/
+div.clear-float {
+  clear: both;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
