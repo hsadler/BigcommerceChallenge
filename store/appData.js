@@ -1,7 +1,7 @@
 
-// Normally, this data would be requested and received from the a server,
+// Normally, this data would be requested and received from the server,
 // but for the sake of this challenge, I'm storing the apps data in this global
-// object like you'd receive from a JSON response
+// object. This is similar to what you'd receive from a JSON response.
 
 var appData = {
 
